@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: rgb(194, 206, 209);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 30px;
+        }
+
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Book Collections</h1>
+    <p>History Books:</p>
+
+    <div class="row">
+        <div class="column">
+            <img src="https://i.pinimg.com/originals/30/c9/7f/30c97f03ea2ffd7bccd58114715ed528.jpg" alt="Snow"
+                style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://baileydesignsbooks.com/wp-content/uploads/2020/04/buriedvapors.jpg" alt="Forest"
+                style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://pictures.abebooks.com/NEILRUTLEDGE/30535910863.jpg" alt="Mountains" style="width:100%">
+        </div>
+    </div>
+
+    <p>Motivational Books:</p>
+
+    <div class="row">
+        <div class="column">
+            <img src="https://lh3.googleusercontent.com/proxy/fQwZ6Z_bI5lKnxaNW5jRDtVWxeDY_uCWzxPV8I-7n-fusefRnKltXW6TC3qzJjm36tIw_ijqo_CYhwQkIKmknQ2Qr2BZPTIhUm8LKAheLtp_DjKYNYoL4ZIG3qeG3cUDLNuWAw"
+                alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://i.pinimg.com/originals/ff/7b/12/ff7b12293d05786f291c36e8ff2faa6d.jpg" alt="Forest"
+                style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://i.pinimg.com/originals/99/c8/a8/99c8a8ce2e02d75240f482983f9ca86b.jpg" alt="Mountains"
+                style="width:100%">
+        </div>
+    </div>
+
+    <p>Travel Books:</p>
+
+    <div class="row">
+        <div class="column">
+            <img src="https://cdn.shopify.com/s/files/1/0016/7232/articles/travel_book_cover_italy_41fdbef6-99e3-436d-99cb-4b1fba22c7cf_600x.jpg?v=1512332003"
+                alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://lonelyplanet-weblinc.netdna-ssl.com/product_images/lonely_planet_us/the-travel-book-3/pdp/59f279d0f92ea14f2f8264b4/pdp_main.jpg?c=1509063120"
+                alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://cdn2.f-cdn.com/contestentries/324893/17545861/568c6ebfc6b88_thumb900.jpg" alt="Mountains"
+                style="width:100%">
+        </div>
+    </div>
+
+</body>
+
+</html>
